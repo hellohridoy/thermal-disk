@@ -5,7 +5,7 @@
             "src": "frontend/package.json",
             "use": "@vercel/static-build",
             "config": {
-                "distDir": "dist/library-ui/browser"
+                "distDir": "frontend/dist/library-ui/browser"
             }
         },
         {
