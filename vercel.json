@@ -19,12 +19,12 @@
             "dest": "backend-node/src/index.ts"
         },
         {
-            "src": "/(.*)",
-            "dest": "/frontend/$1",
-            "continue": true
+            "src": "/(assets/.*)",
+            "dest": "/frontend/$1"
         },
         {
-            "handle": "filesystem"
+            "src": "/(.*\\.(?:js|css|png|jpg|jpeg|svg|ico|json|html|txt|webmanifest))",
+            "dest": "/frontend/$1"
         },
         {
             "src": "/(.*)",
