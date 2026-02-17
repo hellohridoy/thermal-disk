@@ -5,7 +5,7 @@
             "src": "frontend/package.json",
             "use": "@vercel/static-build",
             "config": {
-                "distDir": "frontend/dist/library-ui/browser"
+                "distDir": "dist/library-ui/browser"
             }
         },
         {
@@ -23,7 +23,27 @@
             "dest": "/frontend/$1"
         },
         {
-            "src": "/(.*\\.(?:js|css|png|jpg|jpeg|svg|ico|json|html|txt|webmanifest))",
+            "src": "/(.*\\.js)",
+            "dest": "/frontend/$1"
+        },
+        {
+            "src": "/(.*\\.css)",
+            "dest": "/frontend/$1"
+        },
+        {
+            "src": "/(.*\\.png)",
+            "dest": "/frontend/$1"
+        },
+        {
+            "src": "/(.*\\.jpg)",
+            "dest": "/frontend/$1"
+        },
+        {
+            "src": "/(.*\\.svg)",
+            "dest": "/frontend/$1"
+        },
+        {
+            "src": "/(.*\\.ico)",
             "dest": "/frontend/$1"
         },
         {
