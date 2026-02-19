@@ -1,4 +1,4 @@
 export const environment = {
     production: true,
-    apiUrl: '/api' // Use relative path for combined deployment or change to specific URL later
+    apiUrl: 'https://lms-system-backend-node-1.onrender.com/api'
 };
